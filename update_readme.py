@@ -6,10 +6,10 @@ from typing import List, Optional
 from contextlib import closing
 
 HEADER_TEXT = """
-A database of my zotero library, which can be updated by the script in
+A database of my Zotero library, which can be updated by the script in
 [update_readme.py](update_readme.py). This allows for lightweight git backups of the
-content of a zotero library without burning LFS storage or encountering any copyright
-issues. 
+content of a Zotero library without burning LFS storage or encountering any copyright
+issues.\n
 """
 
 SQL_ITEM_METADATA = """
@@ -154,7 +154,7 @@ def generate_readme(zotero_dir: str, readme_name: str, dry_run: bool) -> None:
                     markdown_lines.append(f"- {markdown_line}")
 
     output_path = os.path.join(zotero_dir, readme_name)
-    output_content = "# Zotero Library\n\n" + HEADER_TEXT + '\n'.join(markdown_lines)
+    output_content = "# Zotero Library\n" + HEADER_TEXT + '\n'.join(markdown_lines)
     
     if dry_run:
         print(output_content)

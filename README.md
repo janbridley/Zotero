@@ -1,5 +1,10 @@
 # Zotero Library
 
+A database of my Zotero library, which can be updated by the script in
+[update_readme.py](update_readme.py). This allows for lightweight git backups of the
+content of a Zotero library without burning LFS storage or encountering any copyright
+issues.
+
 ## ATPESC
 - "LLMatScale"
 - "ATPESC 2025 Slides v2"
