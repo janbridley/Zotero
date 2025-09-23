@@ -3,3 +3,5 @@ storage/*
 styles/*
 translators/*
 *.raycast
+*.bak
+*.sqlite*
